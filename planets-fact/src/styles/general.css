@@ -1,0 +1,6 @@
+body{
+    background-color: var(--black);
+    color: var(--white);
+
+    background-image: url("../../public/assets/images/background-stars.svg");
+}

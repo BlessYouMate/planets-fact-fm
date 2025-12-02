@@ -1,0 +1,35 @@
+.button{
+    background-color: var(--black);
+    color: var(--white);
+    outline: 1px solid hsla(0, 0%, 85%, 0.2);
+    display: flex;
+    justify-content: flex-start;
+    gap: 2.8rem;
+    padding: 1.2rem 2.8rem;
+
+    width: 35rem;
+
+    text-transform: uppercase;
+}
+
+.button:hover{
+    background-color: hsla(0, 0%, 85%, 0.2);
+    cursor: pointer;
+}
+
+.button:active{
+    background-color: var(--color-accent);
+}
+
+.button .button-number{
+    color: var(--grey-400);
+}
+
+
+  /* <button class="button">
+    <h3><span class="button-number">01</span></h3><h3><span>BUTTON</span></h3>
+  </button> */
+
+
+
+

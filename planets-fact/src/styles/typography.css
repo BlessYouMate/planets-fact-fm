@@ -1,0 +1,37 @@
+h1{
+    font-family: "Antonio", sans-serif;
+    font-weight: 500;
+    font-size: 8rem;
+    line-height: 103px;
+}
+
+h2{
+    font-family: "Antonio", sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    line-height: 52px;
+    letter-spacing: -1.5px;
+}
+
+h3{
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 25px;
+    letter-spacing: 2.6px;
+}
+
+h4{
+    font-family: "Spartan", sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 25px;
+    letter-spacing: 1px;
+}
+
+body{
+    font-family: "Spartan", sans-serif;
+    font-weight: 400;
+    font-size: 1.4rem;
+    line-height: 25px;
+}

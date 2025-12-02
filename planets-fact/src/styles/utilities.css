@@ -1,0 +1,31 @@
+.mercury-accent{
+    --color-accent: hsl(194, 48%, 49%);
+}
+
+.venus-accent{
+    --color-accent: hsl(33, 82%, 61%);
+}
+
+.earth-accent{
+    --color-accent: hsl(263, 67%, 51%);
+}
+
+.mars-accent{
+    --color-accent: hsl(10, 63%, 51%);
+}
+ 
+.jupiter-accent{
+    --color-accent: hsl(2, 68%, 53%);
+}
+
+.saturn-accent{
+    --color-accent: hsl(17, 73%, 46%);
+}
+
+.uranus-accent{
+    --color-accent: hsl(169, 73%, 44%);
+}
+
+.neptune-accent{
+    --color-accent: hsl(222, 87%, 56%);
+}
