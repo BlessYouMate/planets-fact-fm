@@ -1,29 +1,109 @@
-.button{
-    background-color: var(--black);
+.header{
+    padding: 2.1rem 2.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+
+.header__logo{
+    font-family: "Antonio", sans-serif;
+    font-size: 2.8rem;
+    letter-spacing: -1.05px;
+    text-decoration: none;
+    font-weight: 500;
     color: var(--white);
+}
+
+/* buttons */
+
+.button__number,
+.button__extra-text{
+    display: none;
+}
+
+.main__buttons{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.3);
+    border-bottom: 1px solid hsla(0, 0%, 59%, 0.3);
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2.4rem;
+}
+
+.main__button{
+    background: none;
+    font-family: "Spartan", sans-serif;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: 1.93px;
+    color: var(--white);
+    opacity: 0.5;
+
+    --border-width: 4px;
+    border-bottom: var(--border-width) solid transparent;
+    padding-top: 1.3rem;
+    padding-bottom: calc(1.3rem - var(--border-width));
+
+    transition: opacity 0.3s, border-color 0.3s;
+}
+
+.main__button:hover,
+.main__button.active{
+    opacity: 1;
+    border-color: var(--color-accent);
+}
+
+.main__button:active{
+    opacity: 1;
+    border-color: var(--color-accent);
+}
+
+/* properties */
+
+.properties-list__item{
+    background-color: transparent;
     outline: 1px solid hsla(0, 0%, 85%, 0.2);
     display: flex;
-    justify-content: flex-start;
-    gap: 2.8rem;
-    padding: 1.2rem 2.8rem;
-
-    width: 35rem;
-
-    text-transform: uppercase;
+    justify-content: space-between;
+    padding: 1rem 2.4rem;
 }
 
-.button:hover{
-    background-color: hsla(0, 0%, 85%, 0.2);
-    cursor: pointer;
+.properties-list__desc{
+    opacity: 0.5;
 }
 
-.button:active{
-    background-color: var(--color-accent);
+@media screen and (min-width: 768px) {
+    .button{
+        background-color: var(--black);
+        color: var(--white);
+        outline: 1px solid hsla(0, 0%, 85%, 0.2);
+        display: flex;
+        justify-content: flex-start;
+        gap: 2.8rem;
+        padding: 1.2rem 2.8rem;
+
+        width: 35rem;
+    }
+
+    .button:hover{
+        background-color: hsla(0, 0%, 85%, 0.2);
+        cursor: pointer;
+    }
+
+    .button:active{
+        background-color: var(--color-accent);
+    }
+
+    .button .button-number{
+        color: var(--grey-400);
+    }
 }
 
-.button .button-number{
-    color: var(--grey-400);
-}
+
 
 
   /* <button class="button">

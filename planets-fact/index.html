@@ -6,60 +6,113 @@
 
   <link rel="stylesheet" href="./src/styles/index.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/images/favicon-32x32.png">
   
   <title>Frontend Mentor | Planets fact site</title>
 </head>
-<body>
-  Mercury
+<body>  
+  <header class="header">
+    <a href="#" class="header__logo to-upper">THE PLANETS</a>
 
-  <!-- Overview Content Start -->
+    <button class="header__hamburger" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
+      <img src="./public/assets/images/icon-hamburger.svg" alt="navigation toggle">
+    </button>
+    
+    <nav class="header__nav hidden">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--mercury"></div>
+          <a class="nav__link to-upper">MERCURY</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--venus"></div>
+          <a class="nav__link to-upper">VENUS</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--earth"></div>
+          <a class="nav__link to-upper">EARTH</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--mars"></div>
+          <a class="nav__link to-upper">MARS</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--jupiter"></div>
+          <a class="nav__link to-upper">JUPITER</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--saturn"></div>
+          <a class="nav__link to-upper">SATURN</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--uranus"></div>
+          <a class="nav__link to-upper">URANUS</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+        <li class="nav__item">
+          <div class="nav__indicator nav__indicator--neptune"></div>
+          <a class="nav__link to-upper">NEPTUNE</a>
+          <img src="./public/assets/images/icon-chevron.svg" alt="">
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-  Mercury is the smallest planet in the Solar System and the closest 
+  <main>
+    <section class="main__buttons">
+      <button class="main__button to-upper active">
+        <span class="button__number">01</span>OVERVIEW
+      </button>
+
+      <button class="main__button to-upper">
+        <span class="button__number">02</span><span class="button__extra-text">INTERNAL </span>STRUCTURE
+      </button>
+
+      <button class="main__button to-upper">
+        <span class="button__number">03</span>SURFACE <span class="button__extra-text">Geology</span>
+      </button>
+    </section>
+
+    <div class="main__img-container"> 
+      <img src="./public/assets/images/planet-mercury.svg" alt="Ilustration of planet" class="main__planet-image">
+    </div>
+    
+    <section class="main__planet-info">
+      <h1 class="text-preset-h1 planet-info__name to-upper">Mercury</h1>
+      <p class="planet-info__desc">
+        Mercury is the smallest planet in the Solar System and the closest 
   to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
   shortest of all the Sun's planets. Mercury is one of four terrestrial 
   planets in the Solar System, and is a rocky body like Earth.
+      </p>
+      <p class="planet-info__source">
+        Source : 
+        <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="planet-info__link"> Wikipedia</a>
+        <img src="./public/assets/images/icon-source.svg" alt="" class="planet-info__icon-source">
+      </p>
+      
+    </section>
 
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet) -->
-
-  <!-- Overview Content End -->
-
-  <!-- Internal Structure Content Start -->
-
-  Mercury appears to have a solid silicate crust and mantle overlying a 
-  solid, iron sulfide outer core layer, a deeper liquid core layer, and 
-  a solid inner core. The planet's density is the second highest in the 
-  Solar System at 5.427 g/cm3 , only slightly less than Earth's density.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Internal_structure -->
-
-  <!-- Internal Structure Content End -->
-
-  <!-- Surface Geology Content Start -->
-
-  Mercury's surface is similar in appearance to that of the Moon, showing 
-  extensive mare-like plains and heavy cratering, indicating that it has 
-  been geologically inactive for billions of years. It is more heterogeneous 
-  than either Mars's or the Moon’s.
-
-  Source : Wikipedia <!-- URL: https://en.wikipedia.org/wiki/Mercury_(planet)#Surface_geology -->
-
-  <!-- Surface Geology Content End -->
-
-  01 Overview
-  02 Internal Structure
-  03 Surface Geology
-
-  Rotation Time
-  58.6 Days
-
-  Revolution Time
-  87.97 Days
-
-  Radius
-  2,439.7 KM
-
-  Average Temp.
-  430°c
+    <ul class="main__properties-list">
+      <li class="properties-list__item">
+        <span class="properties-list__desc to-upper text-preset-h4">Rotation Time</span> <span class="properties-list__value text-preset-h2">58.6 Days</span>
+      </li>
+      <li class="properties-list__item">
+        <span class="properties-list__desc to-upper text-preset-h4">Revolution Time</span> <span class="properties-list__value text-preset-h2">87.97 Days</span>
+      </li>
+      <li class="properties-list__item">
+        <span class="properties-list__desc to-upper text-preset-h4">Radius</span> <span class="properties-list__value text-preset-h2">2,439.7 KM</span>
+      </li>
+      <li class="properties-list__item">
+        <span class="properties-list__desc to-upper text-preset-h4">Average Temp.</span> <span class="properties-list__value text-preset-h2">430°c</span>
+      </li>
+    </ul>
+  </main>
 </body>
 </html>

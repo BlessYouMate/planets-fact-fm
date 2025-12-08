@@ -1,33 +1,68 @@
-h1{
+.text-preset-h1{
     font-family: "Antonio", sans-serif;
     font-weight: 500;
-    font-size: 8rem;
+    font-size: clamp(4rem, 2.036vw + 3.237rem, 4.8rem);
     line-height: 103px;
 }
 
-h2{
+.text-preset-h2{
     font-family: "Antonio", sans-serif;
     font-weight: 500;
-    font-size: 4rem;
-    line-height: 52px;
-    letter-spacing: -1.5px;
+    font-size: clamp(2rem, 1.018vw + 1.618rem, 2.4rem);
+    letter-spacing: -0.75px;
 }
 
-h3{
+.text-preset-h3{
     font-family: "Spartan", sans-serif;
     font-weight: 700;
     font-size: 1.2rem;
-    line-height: 25px;
-    letter-spacing: 2.6px;
+    line-height: 9px;
+    letter-spacing: 1.93px;
 }
 
-h4{
+.text-preset-h4{
     font-family: "Spartan", sans-serif;
-    font-weight: 700;
-    font-size: 1.1rem;
-    line-height: 25px;
-    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.73px;
 }
+
+@media screen and (min-width: 768px) {
+    .text-preset-h1{
+        font-size: clamp(4.8rem, 4.762vw + 1.143rem, 8rem);
+    }
+
+    .text-preset-h2{
+        font-size: clamp(2.4rem, 2.381vw + 0.571rem, 4rem);
+        letter-spacing: -0.9px;
+    }
+
+    .text-preset-h3{
+        font-size: clamp(0.9rem, 0.446vw + 0.557rem, 1.2rem);
+        letter-spacing: 1.93px;
+    }
+
+    .text-preset-h4{
+        font-size: clamp(0.8rem, 0.446vw + 0.457rem, 1.1rem);
+        letter-spacing: 0.73px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .text-preset-h2{
+        letter-spacing: -1.5px;
+    }
+
+    .text-preset-h3{
+        letter-spacing: 2.57px;
+    }
+
+    .text-preset-h3{
+        letter-spacing: 1px;
+    }
+}
+
+
 
 body{
     font-family: "Spartan", sans-serif;
