@@ -17,56 +17,72 @@
     <button class="header__hamburger" aria-label="Menu" aria-controls="primary-navigation" aria-expanded="false">
       <img src="./public/assets/images/icon-hamburger.svg" alt="navigation toggle">
     </button>
-    
-    <nav class="header__nav hidden">
-      <ul class="nav__list">
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--mercury"></div>
-          <a class="nav__link to-upper">MERCURY</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--venus"></div>
-          <a class="nav__link to-upper">VENUS</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--earth"></div>
-          <a class="nav__link to-upper">EARTH</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--mars"></div>
-          <a class="nav__link to-upper">MARS</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--jupiter"></div>
-          <a class="nav__link to-upper">JUPITER</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--saturn"></div>
-          <a class="nav__link to-upper">SATURN</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--uranus"></div>
-          <a class="nav__link to-upper">URANUS</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-        <li class="nav__item">
-          <div class="nav__indicator nav__indicator--neptune"></div>
-          <a class="nav__link to-upper">NEPTUNE</a>
-          <img src="./public/assets/images/icon-chevron.svg" alt="">
-        </li>
-      </ul>
-    </nav>
   </header>
+
+  <nav class="header__nav ">
+    <ul class="nav__list">
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <div class="nav__indicator mercury-accent"></div>
+          <span class="nav__text to-upper">mercury</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <div class="nav__indicator venus-accent"></div>
+          <span class="nav__text to-upper">venus</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <div class="nav__indicator earth-accent"></div>
+          <span class="nav__text to-upper">earth</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+       <a href="#" class="nav__link">
+          <div class="nav__indicator mars-accent"></div>
+          <span class="nav__text to-upper">mars</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+        <a href="#" class="nav__link">
+          <div class="nav__indicator jupiter-accent"></div>
+          <span class="nav__text to-upper">jupiter</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+       <a href="#" class="nav__link">
+          <div class="nav__indicator saturn-accent"></div>
+          <span class="nav__text to-upper">saturn</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+       <a href="#" class="nav__link">
+          <div class="nav__indicator uranus-accent"></div>
+          <span class="nav__text to-upper">uranus</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+      <li class="nav__item">
+       <a href="#" class="nav__link">
+          <div class="nav__indicator neptune-accent"></div>
+          <span class="nav__text to-upper">neptune</span>
+          <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
+        </a> 
+      </li>
+    </ul>
+  </nav>
 
   <main>
     <section class="main__buttons">
-      <button class="main__button to-upper active">
+      <button class="main__button to-upper">
         <span class="button__number">01</span>OVERVIEW
       </button>
 
@@ -114,5 +130,7 @@
       </li>
     </ul>
   </main>
+
+  <script src="./src/scripts/index.js"></script>
 </body>
 </html>
