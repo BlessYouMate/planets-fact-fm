@@ -1,7 +1,7 @@
 /* === colors === */
 
 .mercury-accent{
-    --color-accent: hsl(196, 83%, 93%);
+    --color-accent: hsl(194, 48%, 50%);
 }
 
 .venus-accent{
@@ -31,8 +31,6 @@
 .neptune-accent{
     --color-accent: hsl(222, 95%, 63%);
 }
-
-/* === ? === */
 
 .hidden{
     display: none;

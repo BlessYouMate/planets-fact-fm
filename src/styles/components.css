@@ -1,4 +1,13 @@
+/* header */
+
+.header__hamburger{ 
+    background: none;
+}
+
 .header{
+    position: sticky;
+    top: 0;
+    z-index: 100;
     padding: 2.1rem 2.4rem;
     display: flex;
     justify-content: space-between;
@@ -17,88 +26,6 @@
     font-weight: 500;
     color: var(--white);
 }
-
-/* buttons */
-
-.button__number,
-.button__extra-text{
-    display: none;
-}
-
-.main__buttons{
-    border-top: 1px solid hsla(0, 0%, 59%, 0.3);
-    border-bottom: 1px solid hsla(0, 0%, 59%, 0.3);
-    font-size: 1.2rem;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2.4rem;
-}
-
-.main__button{
-    background: none;
-    font-family: "Spartan", sans-serif;
-    font-size: 1.1rem;
-    font-weight: 700;
-    letter-spacing: 1.93px;
-    color: var(--white);
-    opacity: 0.5;
-
-    --border-width: 4px;
-    border-bottom: var(--border-width) solid transparent;
-    padding-top: 1.3rem;
-    padding-bottom: calc(1.3rem - var(--border-width));
-
-    transition: opacity 0.3s, border-color 0.3s;
-}
-
-.main__button:hover{
-    opacity: 1;
-    border-color: var(--color-accent);
-}
-
-@media screen and (min-width: 768px) {
-    .button{
-        background-color: var(--black);
-        color: var(--white);
-        outline: 1px solid hsla(0, 0%, 85%, 0.2);
-        display: flex;
-        justify-content: flex-start;
-        gap: 2.8rem;
-        padding: 1.2rem 2.8rem;
-
-        width: 35rem;
-    }
-
-    .button:hover{
-        background-color: hsla(0, 0%, 85%, 0.2);
-        cursor: pointer;
-    }
-
-    .button:active{
-        background-color: var(--color-accent);
-    }
-
-    .button .button-number{
-        color: var(--grey-400);
-    }
-}
-
-/* properties */
-
-.properties-list__item{
-    background-color: transparent;
-    outline: 1px solid hsla(0, 0%, 85%, 0.2);
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 2.4rem;
-}
-
-.properties-list__desc{
-    opacity: 0.5;
-}
-
 
 /* navigation */
 
@@ -161,10 +88,203 @@
     margin-left: auto;
 }
 
+@media screen and (min-width: 768px){
+    .header__hamburger{ 
+        display: none;
+    }
 
-  /* <button class="button">
-    <h3><span class="button-number">01</span></h3><h3><span>BUTTON</span></h3>
-  </button> */
+    .header{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        padding: 3.2rem 0;
+    }
+
+    .header__nav{
+        position: relative;
+        opacity: 1;
+        transform: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .nav__indicator{
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 3.3rem;
+        padding: 0 5.2rem;
+    }
+
+    .nav__text{
+        font-family: "Spartan", sans-serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+        letter-spacing: 1px;
+        line-height: 25px;
+    }
+
+    .nav__icon{
+        display: none;
+    }
+}
+
+/* buttons */
+
+.button__number,
+.button__extra-text{
+    display: none;
+}
+
+.main__buttons{
+    border-top: 1px solid hsla(0, 0%, 59%, 0.3);
+    border-bottom: 1px solid hsla(0, 0%, 59%, 0.3);
+    font-size: 1.2rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -2.4rem;
+    padding: 0 2.4rem;
+}
+
+
+.main__button{
+    background: none;
+    font-family: "Spartan", sans-serif;
+    font-size: 1.1rem;
+     
+    letter-spacing: 1.93px;
+    color: var(--white);
+    opacity: 0.5;
+
+    --border-width: 4px;
+    border-bottom: var(--border-width) solid transparent;
+    padding-top: 1.3rem;
+    padding-bottom: calc(1.3rem - var(--border-width));
+
+    transition: opacity 0.3s, border-color 0.3s;
+}
+
+.main__button:hover{
+    opacity: 1;
+    border-color: var(--color-accent);
+    cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    .button__number,
+    .button__extra-text{
+        display: inline;
+    }
+
+    .main__buttons{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1.6rem;
+        border: 0;
+        opacity: 1;
+        
+    }
+
+    .main__button{
+        background-color: var(--black);
+        color: var(--white);
+        outline: 1px solid hsla(0, 0%, 85%, 0.2);
+        text-align: left;
+        padding: 0.8rem 2rem;
+
+        width: 100%;
+        opacity: 1;
+        font-weight: 400;
+        border: 0;
+    }
+
+    .button__number{
+        padding-right: 1.4rem;
+        opacity: 0.5;
+    }
+
+    .main__button:hover{
+        background-color: var(--color-accent);
+        cursor: pointer;
+    }
+
+    .main__button:active{
+        background-color: var(--color-accent);
+    }
+
+    .main__button .button-number{
+        color: var(--grey-400);
+    }
+}
+
+/* properties */
+
+.properties-list__item{
+    background-color: transparent;
+    outline: 1px solid hsla(0, 0%, 85%, 0.2);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.4rem;
+}
+
+.properties-list__desc{
+    opacity: 0.5;
+}
+
+/* main content */
+
+.planet-info__desc{
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    line-height: 22px;
+
+    padding-bottom: 3.2rem;
+}
+
+.planet-info__source{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: .4rem;
+
+   padding-bottom: 2.8rem;
+}
+
+.planet-info__source{
+    font-family: "Spartan", sans-serif;
+    font-weight: 300;
+    font-size: 1.6rem;
+    opacity: 0.5;
+}
+
+.planet-info__link{
+    font-weight: 500;
+    color: var(--white);
+}
+
+.planet-info__icon-source{
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .planet-info__source{
+        display: block;
+    }
+
+    .properties-list__item{
+        flex-direction: column;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    
+}
 
 
 

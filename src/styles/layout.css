@@ -1,0 +1,101 @@
+/* main */
+
+.main{
+    padding: 0 2.4rem;
+}
+
+/* image */
+
+.main__img-container{
+    display:  flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__planet-image{
+    transform: scale(40%);
+}
+
+@media screen and (min-width: 768px) {
+    .main__planet-image{
+        transform: scale(63%);
+    }
+
+    .main__img-container{
+        padding-top: 9.5rem;
+        padding-bottom: 6rem;
+    }
+
+}
+
+/* text */
+
+.main__planet-info{
+    text-align: center;
+}
+
+/* main tablet layout */
+
+@media screen and (min-width: 768px) {
+    .main{
+        padding: 0 3.9rem;
+    }
+
+    .main__planet-info{
+        text-align: left;
+    }
+
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "img img"
+        "text-desc buttons"
+        "properties properties";
+
+        column-gap: 6.9rem;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .main__buttons{
+        grid-area: buttons;
+    }
+
+    .main__img-container{
+        grid-area: img;
+    }
+
+    .main__planet-info{
+        grid-area: text-desc;
+    }
+
+    .main__properties-list{
+        grid-area: properties;
+    }
+    
+}
+
+/* properties */
+
+.main__properties-list{
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    padding-bottom: 4.7rem;
+}
+
+@media screen and (min-width: 768px) {
+    .main__properties-list{
+        flex-direction: row;
+        gap: 1.1rem;
+        padding: 0;
+    }
+
+    .properties-list__item{
+        flex: 1;
+        gap: 0.6rem;
+    }
+}
