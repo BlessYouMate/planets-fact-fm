@@ -4,18 +4,6 @@
     background: none;
 }
 
-.header{
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    padding: 2.1rem 2.4rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    background-color: var(--black);
-}
-
 /* logo */
 
 .header__logo{
@@ -48,7 +36,6 @@
 .nav-expanded{
     transform: translateX(0%);
     opacity: 1;
-      
 }
 
 .nav__list{
@@ -133,7 +120,6 @@
         height: auto;
     }
 
-
     .nav__text{
         font-family: "Spartan", sans-serif;
         font-weight: 300;
@@ -202,7 +188,6 @@
     margin: 0 -2.4rem;
     padding: 0 2.4rem;
 }
-
 
 .main__button{
     background: none;
@@ -277,6 +262,18 @@
 
 /* main content */
 
+/* text */
+
+.main__planet-info{
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .main__planet-info{
+        text-align: left;
+    }
+}
+
 .planet-info__desc{
     font-family: "Spartan", sans-serif;
     font-weight: 300;
@@ -315,7 +312,6 @@
     .planet-info__source{
         display: block;
     }
-    
 }
 
 @media screen and (min-width: 1440px) {
@@ -334,7 +330,6 @@
     .main__planet-info{
         padding-bottom: 3.9rem;
     }
-
 }
 
 /* properties */
@@ -356,8 +351,10 @@
         flex-direction: column;
         padding-top: 1rem;
         padding-bottom: 2rem;
+
+        flex: 1;
+        gap: 0.6rem;
     }
-    
 }
 
 @media screen and (min-width: 1440px) {
@@ -367,13 +364,11 @@
         padding-right: 0;
         padding-bottom: 3.5rem;
         padding-left: 2.3rem;
+
+        gap: 1.2rem;
     }
 
     .properties-list__desc{
         font-size: 1.4rem;
     }
 }
-
-
-
-

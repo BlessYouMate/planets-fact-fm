@@ -40,6 +40,9 @@
     text-transform: uppercase;
 }
 
-.highlight{
-    background-color: var(--color-accent);
+
+@media screen and (min-width: 768px) {
+    .highlight{
+        background-color: var(--color-accent);
+    }
 }
