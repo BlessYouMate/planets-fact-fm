@@ -28,13 +28,18 @@
 
 }
 
+@media screen and (min-width: 1440px) {
+    .main__planet-image{
+        transform: scale(100%);
+    }
+
+}
+
 /* text */
 
 .main__planet-info{
     text-align: center;
 }
-
-/* main tablet layout */
 
 @media screen and (min-width: 768px) {
     .main{
@@ -74,6 +79,22 @@
     
 }
 
+@media screen and (min-width: 1440px) {
+    .main{
+        display: grid;
+        grid-template-areas: 
+        "img text-desc"
+        "img buttons"
+        "properties properties";
+        column-gap: 0;
+        grid-template-columns: 2.4fr 1fr;
+
+        padding: 0 16.5rem;
+        padding-top: 12.6rem;
+    }
+
+}
+
 /* properties */
 
 .main__properties-list{
@@ -83,8 +104,6 @@
     display: flex;
     flex-direction: column;
     gap: 0.8rem;
-
-    padding-bottom: 4.7rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -99,3 +118,16 @@
         gap: 0.6rem;
     }
 }
+
+@media screen and (min-width: 1440px) {
+    .main__properties-list{
+        padding-top: 8.7rem;
+        gap: 3rem;
+    }
+
+    .properties-list__item{
+        gap: 1.2rem;
+    }
+}
+
+
