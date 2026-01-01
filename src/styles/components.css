@@ -36,6 +36,7 @@
 .nav-expanded{
     transform: translateX(0%);
     opacity: 1;
+    overflow-y: scroll;
 }
 
 .nav__list{

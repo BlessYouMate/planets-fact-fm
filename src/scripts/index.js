@@ -3,6 +3,12 @@ let nav = document.querySelector(".header__nav");
 let body = document.querySelector("body");
 function handleNav(){
     nav.classList.toggle("nav-expanded");
+    if(nav.classList.contains("nav-expanded")){
+        body.style.overflow = "hidden";
+    }
+    else{
+        body.style.overflow = "auto";
+    }
 }
 
 navBtn.addEventListener("click", handleNav);
