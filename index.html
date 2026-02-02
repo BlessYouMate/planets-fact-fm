@@ -6,9 +6,9 @@
 
   <link rel="stylesheet" href="./src/styles/index.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./public/assets/images/planet-earth.svg">
   
-  <title>Frontend Mentor | Planets fact site</title>
+  <title>Planets fact site | Frontend Mentor</title>
 </head>
 <body>  
   <header class="header">
@@ -22,56 +22,56 @@
     <nav class="header__nav">
       <ul class="nav__list">
         <li class="nav__item">
-          <a href="/mercury" class="nav__link">
+          <a href="#mercury" class="nav__link">
             <div class="nav__indicator mercury-accent"></div>
             <span class="nav__text to-upper">mercury</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-          <a href="/venus" class="nav__link">
+          <a href="#venus" class="nav__link">
             <div class="nav__indicator venus-accent"></div>
             <span class="nav__text to-upper">venus</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#earth" class="nav__link">
             <div class="nav__indicator earth-accent"></div>
             <span class="nav__text to-upper">earth</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-        <a href="#" class="nav__link">
+        <a href="#mars" class="nav__link">
             <div class="nav__indicator mars-accent"></div>
             <span class="nav__text to-upper">mars</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-          <a href="#" class="nav__link">
+          <a href="#jupiter" class="nav__link">
             <div class="nav__indicator jupiter-accent"></div>
             <span class="nav__text to-upper">jupiter</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-        <a href="#" class="nav__link">
+        <a href="#saturn" class="nav__link">
             <div class="nav__indicator saturn-accent"></div>
             <span class="nav__text to-upper">saturn</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-        <a href="#" class="nav__link">
+        <a href="#uranus" class="nav__link">
             <div class="nav__indicator uranus-accent"></div>
             <span class="nav__text to-upper">uranus</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
           </a> 
         </li>
         <li class="nav__item">
-        <a href="#" class="nav__link">
+        <a href="#neptune" class="nav__link">
             <div class="nav__indicator neptune-accent"></div>
             <span class="nav__text to-upper">neptune</span>
             <img src="./public/assets/images/icon-chevron.svg" alt="" class="nav__icon">
@@ -82,31 +82,27 @@
   </header> 
   <main class="main">
     <section class="main__buttons">
-      <button class="main__button to-upper highlight">
+      <button class="main__button to-upper highlight overview" value="overview">
         <span class="button__number">01 </span>OVERVIEW
       </button>
 
-      <button class="main__button to-upper">
+      <button class="main__button to-upper structure" value="structure">
         <span class="button__number">02 </span><span class="button__extra-text">INTERNAL </span>STRUCTURE
       </button>
 
-      <button class="main__button to-upper">
+      <button class="main__button to-upper geology" value="geology">
         <span class="button__number">03 </span>SURFACE <span class="button__extra-text">Geology</span>
       </button>
     </section>
 
     <div class="main__img-container"> 
-      <img src="./public/assets/images/planet-mercury.svg" alt="Ilustration of planet" class="main__planet-image">
+      <img src="./public/assets/images/blank.png" alt="Ilustration of planet" class="main__planet-image">
+      <img src="./public/assets/images/blank.png" alt="Ilustration of planet" class="main__planet-geology-image">
     </div>
     
     <section class="main__planet-info">
-      <h1 class="text-preset-h1 planet-info__name to-upper">Mercury</h1>
-      <p class="planet-info__desc">
-        Mercury is the smallest planet in the Solar System and the closest 
-  to the Sun. Its orbit around the Sun takes 87.97 Earth days, the 
-  shortest of all the Sun's planets. Mercury is one of four terrestrial 
-  planets in the Solar System, and is a rocky body like Earth.
-      </p>
+      <h1 class="text-preset-h1 planet-info__name to-upper">Loading...</h1>
+      <p class="planet-info__desc">Loading...</p>
       <p class="planet-info__source">
         Source : 
         <a href="https://en.wikipedia.org/wiki/Mercury_(planet)" class="planet-info__link"> Wikipedia</a>
@@ -117,16 +113,16 @@
 
     <ul class="main__properties-list">
       <li class="properties-list__item">
-        <span class="properties-list__desc to-upper text-preset-h4">Rotation Time</span> <span class="properties-list__value text-preset-h2">58.6 Days</span>
+        <span class="properties-list__desc to-upper text-preset-h4">Rotation Time</span> <span class="properties-list__value text-preset-h2 rotation-value">Loading...</span>
       </li>
       <li class="properties-list__item">
-        <span class="properties-list__desc to-upper text-preset-h4">Revolution Time</span> <span class="properties-list__value text-preset-h2">87.97 Days</span>
+        <span class="properties-list__desc to-upper text-preset-h4">Revolution Time</span> <span class="properties-list__value text-preset-h2 revolution-value">Loading...</span>
       </li>
       <li class="properties-list__item">
-        <span class="properties-list__desc to-upper text-preset-h4">Radius</span> <span class="properties-list__value text-preset-h2">2,439.7 KM</span>
+        <span class="properties-list__desc to-upper text-preset-h4">Radius</span> <span class="properties-list__value text-preset-h2 radius-value">Loading...</span>
       </li>
       <li class="properties-list__item">
-        <span class="properties-list__desc to-upper text-preset-h4">Average Temp.</span> <span class="properties-list__value text-preset-h2">430°c</span>
+        <span class="properties-list__desc to-upper text-preset-h4">Average Temp.</span> <span class="properties-list__value text-preset-h2 temperature-value">Loading...</span>
       </li>
     </ul>
   </main>

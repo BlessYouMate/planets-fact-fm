@@ -1,0 +1,103 @@
+.main__planet-image{
+    --design-dimensions-mercury: 111px;
+    --design-dimensions-venus: 154px;
+    --design-dimensions-earth: 173px;
+    --design-dimensions-mars: 129px;
+    --design-dimensions-jupiter: 224px;
+    --design-dimensions-saturn: 256px;
+    --design-dimensions-uranus: 176px;
+    --design-dimensions-neptune: 173px;
+
+    --img-container-size: 280px;
+}
+
+@media screen and (min-width: 768px){
+    .main__planet-image{
+        --design-dimensions-mercury: 184px;
+        --design-dimensions-venus: 253px;
+        --design-dimensions-earth: 285px;
+        --design-dimensions-mars: 213px;
+        --design-dimensions-jupiter: 369px;
+        --design-dimensions-saturn: 422px;
+        --design-dimensions-uranus: 290px;
+        --design-dimensions-neptune: 285px;
+    
+        --img-container-size: 422px;
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .main__planet-image{
+        --design-dimensions-mercury: 290px;
+        --design-dimensions-venus: 400px;
+        --design-dimensions-earth: 450px;
+        --design-dimensions-mars: 336px;
+        --design-dimensions-jupiter: 582px;
+        --design-dimensions-saturn: 666px;
+        --design-dimensions-uranus: 458px;
+        --design-dimensions-neptune: 450px;
+    
+        --img-container-size: 666px;
+    }
+}
+
+
+.main__planet-image[src*="mercury"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-mercury) / 
+            var(--img-container-size)));
+
+}
+
+.main__planet-image[src*="venus"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-venus) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="earth"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-earth) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="mars"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-mars) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="jupiter"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-jupiter) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="saturn"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-saturn) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="uranus"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-uranus) / 
+            var(--img-container-size)));
+}
+
+.main__planet-image[src*="neptune"]{
+    transform: 
+    scale(calc(
+            var(--design-dimensions-neptune) / 
+            var(--img-container-size)));
+}
+
+
+
