@@ -1,43 +1,43 @@
 .main__planet-image{
-    --design-dimensions-mercury: 111px;
-    --design-dimensions-venus: 154px;
-    --design-dimensions-earth: 173px;
-    --design-dimensions-mars: 129px;
-    --design-dimensions-jupiter: 224px;
-    --design-dimensions-saturn: 256px;
-    --design-dimensions-uranus: 176px;
-    --design-dimensions-neptune: 173px;
+    --design-dimensions-mercury: 111;
+    --design-dimensions-venus: 154;
+    --design-dimensions-earth: 173;
+    --design-dimensions-mars: 129;
+    --design-dimensions-jupiter: 224;
+    --design-dimensions-saturn: 256;
+    --design-dimensions-uranus: 176;
+    --design-dimensions-neptune: 173;
 
-    --img-container-size: 280px;
+    --img-container-size: 280;
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 768){
     .main__planet-image{
-        --design-dimensions-mercury: 184px;
-        --design-dimensions-venus: 253px;
-        --design-dimensions-earth: 285px;
-        --design-dimensions-mars: 213px;
-        --design-dimensions-jupiter: 369px;
-        --design-dimensions-saturn: 422px;
-        --design-dimensions-uranus: 290px;
-        --design-dimensions-neptune: 285px;
+        --design-dimensions-mercury: 184;
+        --design-dimensions-venus: 253;
+        --design-dimensions-earth: 285;
+        --design-dimensions-mars: 213;
+        --design-dimensions-jupiter: 369;
+        --design-dimensions-saturn: 422;
+        --design-dimensions-uranus: 290;
+        --design-dimensions-neptune: 285;
     
-        --img-container-size: 422px;
+        --img-container-size: 422;
     }
 }
 
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1440){
     .main__planet-image{
-        --design-dimensions-mercury: 290px;
-        --design-dimensions-venus: 400px;
-        --design-dimensions-earth: 450px;
-        --design-dimensions-mars: 336px;
-        --design-dimensions-jupiter: 582px;
-        --design-dimensions-saturn: 666px;
-        --design-dimensions-uranus: 458px;
-        --design-dimensions-neptune: 450px;
+        --design-dimensions-mercury: 290;
+        --design-dimensions-venus: 400;
+        --design-dimensions-earth: 450;
+        --design-dimensions-mars: 336;
+        --design-dimensions-jupiter: 582;
+        --design-dimensions-saturn: 666;
+        --design-dimensions-uranus: 458;
+        --design-dimensions-neptune: 450;
     
-        --img-container-size: 666px;
+        --img-container-size: 666;
     }
 }
 
