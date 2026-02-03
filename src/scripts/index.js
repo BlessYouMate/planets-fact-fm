@@ -134,7 +134,7 @@ function render(){
             btn.classList.add("highlight");
         }
         else{
-             btn.classList.remove("highlight");
+            btn.classList.remove("highlight");
         }
     });
 
@@ -148,7 +148,7 @@ function render(){
 * main
 */
 
-fetch("../public/data/data.json")
+fetch("./public/data/data.json")
     .then(response => response.json())
     .then(data => {
         initApp(data);
