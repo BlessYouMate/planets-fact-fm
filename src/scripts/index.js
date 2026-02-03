@@ -53,6 +53,21 @@ const viewConfig = {
 }
 
 /*
+* colors
+*/
+
+const colors = {
+    mercury: "hsl(194, 48%, 50%)",
+    venus: "hsl(39, 88%, 73%)",
+    earth: "hsl(238, 99%, 66%)",
+    mars: "hsl(12, 100%, 64%)",
+    jupiter: "hsl(27, 75%, 70%)",
+    saturn: "hsl(40, 96%, 70%)",
+    uranus: "hsl(168, 82%, 67%)",
+    neptune: "hsl(222, 87%, 56%)",
+}
+
+/*
 * functions
 */
 
@@ -101,6 +116,10 @@ function toggleMobileNav(){
 function render(){
     const planetData = appState.data.find(p => p.name.toLowerCase() === appState.currentPlanet);
     if(!planetData) return;
+
+    // set accent color
+    const color = colors[appState.currentPlanet.toLowerCase()];
+    elements.body.style.setProperty("--color-accent", color);
 
     // get config
     const config = viewConfig[appState.currentView];
